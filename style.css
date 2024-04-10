@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Cookie";
+    src: url("cookiedough-2yro-webfont.woff") format("woff");
+    src: url("cookiedough-2yro-webfont.woff2") format("woff2");
+}
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: "Cookie", Arial, sans-serif;
+    background-color: blanchedalmond;
+}
+
+h1 {
+    font-size: 72px;
+    text-align: center;
+}
+#gridContainer {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    grid-template-areas:
+        "cookieJar"
+        "buzzerButton"
+        "message";
+}
+
+#buzzerButton {
+    cursor: pointer;
+    grid-area: buzzerButton;
+}
+
+#cookieJar {
+    display: flex; 
+    gap: 5px;
+    flex-wrap: wrap; 
+    justify-content: center;
+    grid-area: cookieJar; 
+}
+
+#cookieJar img {
+    width: 100px; 
+    height: auto; 
+}
+
+#message {
+    font-size: 40px;
+    color: brown;
+    grid-area: message; 
+}
